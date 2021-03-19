@@ -1,0 +1,137 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5803380271264770004
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5803380271264770002}
+  - component: {fileID: 5803380271264770003}
+  - component: {fileID: 5803380271264770001}
+  - component: {fileID: 5803380271264770000}
+  - component: {fileID: 5803380271264770031}
+  - component: {fileID: 5803380271264770030}
+  m_Layer: 0
+  m_Name: Managers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5803380271264770002
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5803380271264770004}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5803380271264770003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5803380271264770004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e28e8505a3f8746af2bc4e7efaf38e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 0}
+  cursor: {fileID: 0}
+  cursorOffSet: 175
+  offscreenOffSet: 30
+  numberOfAsteroidsToSpawnInTotal: 5
+  stopTime: 0.2
+  slowTime: 0.2
+--- !u!114 &5803380271264770001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5803380271264770004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c25109d848dc7c4c85e88c8ce769a4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemsToPool:
+  - prefab: {fileID: 913789323854440658, guid: f8fe0b4f1510d0340829f91d856f3bee, type: 3}
+    poolAmount: 5
+    poolCapp: 20
+    isExpandable: 1
+  - prefab: {fileID: 913789323854440658, guid: 0e9ce747399d9064687957c3ef2a1804, type: 3}
+    poolAmount: 5
+    poolCapp: 20
+    isExpandable: 1
+--- !u!114 &5803380271264770000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5803380271264770004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 159c140a497a41d47aa9f429c9dd1c7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemsToPool:
+  - prefab: {fileID: 6126340782053873571, guid: 082e37d89919c814c94821cf2875b40b, type: 3}
+    poolAmount: 15
+    poolCapp: 30
+    isExpandable: 1
+  - prefab: {fileID: 6126340782053873571, guid: 5dc37341b51ab9c4e8a87cddc24365f9, type: 3}
+    poolAmount: 30
+    poolCapp: 60
+    isExpandable: 1
+  - prefab: {fileID: 6126340782053873571, guid: 880143fd9b6619c4c852e6465f63f2af, type: 3}
+    poolAmount: 60
+    poolCapp: 120
+    isExpandable: 1
+--- !u!114 &5803380271264770031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5803380271264770004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a11d1f0121b7ef41960f8e0b91b2973, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ui: {fileID: 0}
+  pauseMenu: {fileID: 0}
+  topUi: {fileID: 0}
+  startButton: {fileID: 0}
+  optionsButton: {fileID: 0}
+  exitButton: {fileID: 0}
+  scourText: {fileID: 0}
+  remainingCountText: {fileID: 0}
+  livesText: {fileID: 0}
+--- !u!114 &5803380271264770030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5803380271264770004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d845fc059d5754a4c817891009619623, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 0.2
+  frequency: {x: 1, y: 1}
