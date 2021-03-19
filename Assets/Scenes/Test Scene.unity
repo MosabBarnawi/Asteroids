@@ -1495,7 +1495,7 @@ PrefabInstance:
       objectReference: {fileID: 782648029}
     - target: {fileID: 5803380271264770003, guid: bcacdd6b7e1973d49b7e20ce22932dd0, type: 3}
       propertyPath: numberOfAsteroidsToSpawnInTotal
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5803380271264770004, guid: bcacdd6b7e1973d49b7e20ce22932dd0, type: 3}
       propertyPath: m_Name
