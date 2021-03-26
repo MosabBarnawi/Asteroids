@@ -15,6 +15,12 @@ public class AsteroidsPoolingSystem : PoolingClass<AsteroidsPoolingSystem>
     {
         GameObject obj = GetItemFromPool(ItemsToPool[(int)asteroidSize]);
 
+        if(obj == null)
+        {
+            Debug.LogWarning("Can't Get Asteroid");
+            return;
+        }
+
         obj.transform.position = GameManager.Instance.GetRandomPositionOffScreen();
         obj.SetActive(true);
 

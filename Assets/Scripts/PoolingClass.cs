@@ -12,6 +12,7 @@ public class PoolingClass<T> : MonoSingleton<T> where T : MonoBehaviour
     private List<GameObject> pooledList;
     private bool isSinglePool = false;
     private Scene pooledScene;
+    private bool isResolvedError = true;
 
     public void CreatePool(in List<PoolSettings> poolSettings, bool inDifferentScene = false)
     {
@@ -111,23 +112,40 @@ public class PoolingClass<T> : MonoSingleton<T> where T : MonoBehaviour
 
     private GameObject ReciveItemFromDictonary(in PoolSettings poolSettings)
     {
-        for (int i = 0; i < poolingDictionary[poolSettings.identifier].Count; i++)
+        var dictionary  = poolingDictionary;
+        if (dictionary == null)
         {
-            if (!poolingDictionary[poolSettings.identifier][i].activeInHierarchy)
+            Debug.LogError("NULL DICTIONARY");
+            isResolvedError = false;
+            return null;
+        }
+        
+        if(!isResolvedError)
+        {
+            isResolvedError = true;
+            Debug.Log("Null Dictionary Resolved");
+        }
+
+        List<GameObject> pool =  poolingDictionary[poolSettings.identifier];
+
+        for (int i = 0; i < pool.Count; i++)
+        {
+            if (!pool[i].activeInHierarchy)
             {
-                return poolingDictionary[poolSettings.identifier][i];
+                return pool[i];
             }
         }
+
         if (!poolSettings.isExpandable) return null;
         else
         {
-            if (poolingDictionary[poolSettings.identifier].Count < poolSettings.poolCapp)
+            if (pool.Count < poolSettings.poolCapp)
             {
-
                 return CreateItemToPoolAndAdd(poolSettings);
             }
             else
             {
+                Debug.Log("Reached Max Cap");
                 return null;
             }
         }

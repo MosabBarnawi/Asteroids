@@ -62,9 +62,9 @@ public class ShipControls : DamagableObject, IPlayerTag
 
     private Quaternion AimMouse()
     {
-        Vector2 positionOnScreen = Camera.main.WorldToViewportPoint(transform.position);
+        Vector2 positionOnScreen = GameManager.Instance.MainCamera.WorldToViewportPoint(transform.position);
 
-        Vector2 mouseOnScreen = (Vector2)Camera.main.ScreenToViewportPoint(Input.mousePosition);
+        Vector2 mouseOnScreen = (Vector2)GameManager.Instance.MainCamera.ScreenToViewportPoint(Input.mousePosition);
 
         float angle = Helpers.AngleBetweenTwoPoints(positionOnScreen, mouseOnScreen);
 

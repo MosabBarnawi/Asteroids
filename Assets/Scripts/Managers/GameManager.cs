@@ -17,6 +17,7 @@ public class GameManager : GameStateManager
     [SerializeField] private int numberOfAsteroidsToSpawnInTotal = 5;
 
     #region Properties
+    public Camera MainCamera => mainCamera;
     public Bounds bounds { get; private set; }
     public bool isPlayerInvincible { get; private set; }
     public bool IsPaused { get; private set; }

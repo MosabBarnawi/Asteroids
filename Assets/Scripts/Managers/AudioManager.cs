@@ -2,6 +2,7 @@ using Random = UnityEngine.Random;
 using UnityEngine;
 using System;
 
+// TODO:: DONT MAKE A SINGLETON
 public class AudioManager : MonoSingleton<AudioManager>
 {
     [SerializeField] private Sound[] sounds;

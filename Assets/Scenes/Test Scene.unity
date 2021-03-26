@@ -1441,6 +1441,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5803380271264770000, guid: bcacdd6b7e1973d49b7e20ce22932dd0, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5803380271264770001, guid: bcacdd6b7e1973d49b7e20ce22932dd0, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5803380271264770002, guid: bcacdd6b7e1973d49b7e20ce22932dd0, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -1513,6 +1521,10 @@ PrefabInstance:
       propertyPath: livesText
       value: 
       objectReference: {fileID: 333303501}
+    - target: {fileID: 5803380271264770031, guid: bcacdd6b7e1973d49b7e20ce22932dd0, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5803380271264770031, guid: bcacdd6b7e1973d49b7e20ce22932dd0, type: 3}
       propertyPath: pauseMenu
       value: 
