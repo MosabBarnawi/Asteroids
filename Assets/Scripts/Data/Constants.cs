@@ -10,7 +10,4 @@ public static class Constants
     public const int NUMBER_TO_SPAWN = 2;
 
     public const string GAME_OVER_TEXT = "GAME OVER";
-    public const string THREE_LIVES = "I I I";
-    public const string TWO_LIVES = "I I  ";
-    public const string ONE_LIVE = "I    ";
 }

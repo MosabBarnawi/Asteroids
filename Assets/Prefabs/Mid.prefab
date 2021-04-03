@@ -30,7 +30,7 @@ Transform:
   m_LocalPosition: {x: -27.7, y: 0, z: 0}
   m_LocalScale: {x: 7.5, y: 7.5, z: 7.5}
   m_Children:
-  - {fileID: 1733948697856254778}
+  - {fileID: 75212590626543667}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -42,7 +42,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6126340782053873571}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -59,8 +59,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8083e187ad46b69429e259be6e82fd05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 2
-  astroidScriptable: {fileID: 11400000, guid: 289f6b031f6c2d74c82e3f2060884d68, type: 2}
+  startingHealth: 10
+  astoroidScriptable: {fileID: 11400000, guid: 289f6b031f6c2d74c82e3f2060884d68, type: 2}
 --- !u!114 &8834359821179576398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75,7 +75,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 50
   maxAcceleration: 100
---- !u!1001 &8851466896186146290
+--- !u!1001 &7191604747317167867
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -132,8 +132,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f890a2d20314bc4ab14c15fd468d271, type: 3}
---- !u!4 &1733948697856254778 stripped
+--- !u!4 &75212590626543667 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7117520408163966664, guid: 5f890a2d20314bc4ab14c15fd468d271, type: 3}
-  m_PrefabInstance: {fileID: 8851466896186146290}
+  m_PrefabInstance: {fileID: 7191604747317167867}
   m_PrefabAsset: {fileID: 0}

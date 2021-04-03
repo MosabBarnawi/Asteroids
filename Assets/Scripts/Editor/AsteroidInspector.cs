@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEditor;
 
-[CustomEditor(typeof(Asteroids))]
+[CustomEditor(typeof(Asteroid))]
 public class AsteroidInspector
     : Editor
 {
@@ -9,7 +9,7 @@ public class AsteroidInspector
     {
         base.OnInspectorGUI();
 
-        Asteroids astoroid = (Asteroids)target;
+        Asteroid astoroid = (Asteroid)target;
 
         GUILayout.Space(20);
 
