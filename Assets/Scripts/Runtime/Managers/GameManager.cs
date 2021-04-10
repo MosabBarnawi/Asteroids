@@ -130,6 +130,7 @@ public class GameManager : GameStateManager
         CollectAndSendGameData();
     }
 
+    // TODO:: PLACE HOLDER SYSTEM
     private IEnumerator CountDownToNewWave()
     {
         uIManager.ShowCountDown(true);
@@ -170,7 +171,8 @@ public class GameManager : GameStateManager
     }
 
 
-    #region FX
+    #region FX 
+    // TODO:: REFRACTER
     private void HitFX()
     {
         if (!stopping)
@@ -240,6 +242,7 @@ public class GameManager : GameStateManager
         }
     }
 
+    // TODO:: MOVE INTO ASTROID SCRIPT
     public Vector3 GetRandomPositionOffScreen()
     {
         Direction positionOfSpawn = Helpers.GetRandomDirection();

@@ -23,7 +23,11 @@ public class ShipControls : DamagableObject, IPlayerTag
     {
         imove = GetComponent<IMove>();
 
-        if (imove == null) Debug.LogError("Movement System Not Assigend");
+        if (imove == null)
+        {
+            Debug.LogError("Movement System Not Assigend");
+            imove = gameObject.AddComponent<Movement>();
+        }
 
         RegisterOnDeathAction(OnDeath);
         GameManager.Instance.RegisterPlayerAndOnSpawnAction(Respawn, gameObject);

@@ -36,7 +36,7 @@ public class Asteroid : DamagableObject, IAsteroidTag
         if (imove == null)
         {
             Debug.LogWarning("No IMove Found adding New One");
-            gameObject.AddComponent<Movement>();
+            imove = gameObject.AddComponent<Movement>();
         }
     }
 
